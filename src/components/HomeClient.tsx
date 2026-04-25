@@ -153,16 +153,16 @@ export function HomeClient() {
                 aria-label={label}
                 aria-current={activeSection === id ? "page" : undefined}
                 onClick={() => trackEvent("section_jump", { section: id, source: "top_nav_desktop" })}
-                className={`nav-pill rounded-xl px-3 py-2 hover:text-[#332a22] ${activeSection === id ? "nav-pill-active bg-[#f3e6d6] text-[#332a22]" : ""}`}
+                className={`nav-pill min-w-0 rounded-xl px-3 py-2 text-center hover:text-[#332a22] ${activeSection === id ? "nav-pill-active bg-[#f3e6d6] text-[#332a22]" : ""}`}
               >
                 {label}
               </a>
             ))}
           </nav>
           <div className="flex items-center justify-self-end gap-2">
-            <div className="pastel-chip hidden h-9 items-center gap-2 rounded-full px-3 text-xs font-semibold uppercase tracking-[0.12em] lg:flex">
-              <ShieldCheck className="h-3.5 w-3.5" />
-              {t.shield}
+            <div className="pastel-chip hidden min-w-0 items-center gap-2 rounded-full px-3 py-2 text-xs font-semibold uppercase tracking-[0.12em] lg:flex">
+              <ShieldCheck className="h-3.5 w-3.5 shrink-0" />
+              <span className="break-safe">{t.shield}</span>
             </div>
             <div className="pastel-chip hidden h-9 items-center gap-1 rounded-full p-1 pr-1.5 text-xs font-semibold lg:flex">
               <span className="px-2 text-[11px] uppercase tracking-[0.08em] text-[#6f6256]">{t.languageLabel}</span>
@@ -273,7 +273,7 @@ export function HomeClient() {
               {
                 id: "results",
                 title: german ? "Ergebnis" : "Result",
-                body: german ? "Route, Formulierungen, Unterlagen" : "Route, phrases, documents",
+                body: german ? "Route, Formulierungen, Unterlagen" : "Route, Formulierungen, Unterlagen",
               },
               {
                 id: "glossary",
@@ -286,10 +286,10 @@ export function HomeClient() {
                 href={`#${item.id}`}
                 aria-current={activeSection === item.id ? "page" : undefined}
                 onClick={() => trackEvent("section_jump", { section: item.id, source: "flow_row" })}
-                className="premium-panel rounded-xl p-3 text-sm transition hover:-translate-y-0.5 hover:border-[#c4a68f]"
+                className="premium-panel min-w-0 rounded-xl p-3 text-sm transition hover:-translate-y-0.5 hover:border-[#c4a68f]"
               >
-                <p className="font-semibold text-[#332a22]">{item.title}</p>
-                <p className="mt-1 text-xs leading-5 text-slate-600">{item.body}</p>
+                <p className="break-safe font-semibold text-[#332a22]">{item.title}</p>
+                <p className="break-safe mt-1 text-xs leading-5 text-slate-600">{item.body}</p>
               </a>
             ))}
           </div>
@@ -421,7 +421,7 @@ export function HomeClient() {
 
       <div className="fixed inset-x-0 bottom-3 z-40 px-4 lg:hidden">
         <div className="premium-shell rounded-2xl p-2 shadow-2xl shadow-[#3b3027]/20">
-          <div className="font-ui mb-2 flex gap-1 overflow-x-auto pb-1 text-xs font-semibold text-[#5d5146] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+          <div className="font-ui mb-2 flex gap-1 overflow-x-auto pb-1 text-xs font-semibold text-[#5d5146] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden" lang={language}>
             {[
               ["overview", t.mobile.top],
               ["how-it-works", t.mobile.flow],

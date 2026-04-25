@@ -17,9 +17,9 @@ export function Hero({ onSample, german = false }: { onSample: () => void; germa
             {t.title}
           </h1>
           <p className="mt-5 max-w-2xl text-xl leading-8 text-slate-600">{t.subtitle}</p>
-          <div className="mt-6 grid max-w-2xl gap-3 sm:grid-cols-3">
+          <div className="mt-6 grid max-w-2xl gap-3 grid-cols-2 sm:grid-cols-3">
             {t.chips.map((item) => (
-              <div key={item} className="font-ui premium-shell rounded-xl p-3 text-sm font-semibold text-slate-750">
+              <div key={item} className="font-ui premium-shell break-safe rounded-xl p-3 text-sm font-semibold text-slate-750">
                 {item}
               </div>
             ))}
@@ -46,7 +46,7 @@ export function Hero({ onSample, german = false }: { onSample: () => void; germa
           <div className="mb-5 flex items-center justify-between border-b border-white/50 pb-4">
             <div>
               <p className="text-sm font-medium text-[#8f5f45]">ClinicNav AI</p>
-              <h2 className="font-display text-2xl font-semibold">{t.panelTitle}</h2>
+              <h2 className="font-display break-safe text-2xl font-semibold">{t.panelTitle}</h2>
             </div>
             <div className="pastel-icon flex h-12 w-12 items-center justify-center rounded-full">
               <MapPinned className="h-6 w-6" />

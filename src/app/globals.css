@@ -55,6 +55,23 @@ body {
 
 html {
   scroll-behavior: smooth;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+/* Prevent long German compound words from breaking layouts */
+.text-wrap-balance {
+  text-wrap: balance;
+}
+
+.break-safe {
+  overflow-wrap: break-word;
+  word-break: break-word;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  min-width: 0;
 }
 
 #overview,

@@ -47,7 +47,7 @@ export function ResultCards({ result, german = false }: { result: NavigationResu
         </div>
       </div>
 
-      <div className="mb-4 grid gap-3 md:grid-cols-4">
+      <div className="mb-4 grid gap-3 grid-cols-2 md:grid-cols-4">
         {[
           [t.statRisk, result.riskLevel.replaceAll("_", " ")],
           [t.statRoute, result.recommendedRoute.split(":")[0]],
@@ -56,10 +56,10 @@ export function ResultCards({ result, german = false }: { result: NavigationResu
         ].map(([label, value], index) => (
           <div
             key={label}
-            className={`premium-panel rounded-2xl p-4 ${index === 0 ? "pastel-lavender" : index === 1 ? "pastel-sky" : index === 2 ? "pastel-mint" : "pastel-peach"}`}
+            className={`premium-panel min-w-0 rounded-2xl p-4 ${index === 0 ? "pastel-lavender" : index === 1 ? "pastel-sky" : index === 2 ? "pastel-mint" : "pastel-peach"}`}
           >
-            <p className="font-ui text-xs font-semibold uppercase tracking-[0.16em] text-slate-500">{label}</p>
-            <p className="mt-2 text-sm font-semibold capitalize text-slate-950">{value}</p>
+            <p className="font-ui break-safe text-xs font-semibold uppercase tracking-[0.12em] text-slate-500">{label}</p>
+            <p className="break-safe mt-2 text-sm font-semibold capitalize text-slate-950">{value}</p>
           </div>
         ))}
       </div>
