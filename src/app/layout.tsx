@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "ClinicNav AI",
+  title: "CareNav AI",
   description: "Healthcare navigation assistant for newcomers in Germany.",
 };
 

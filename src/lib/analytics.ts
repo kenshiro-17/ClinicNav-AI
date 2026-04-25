@@ -1,7 +1,7 @@
 type AnalyticsPayload = Record<string, string | number | boolean | null | undefined>;
 
 function normalizeEventName(eventName: string) {
-  return `clinicnav_${eventName
+  return `carenav_${eventName
     .trim()
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, "_")

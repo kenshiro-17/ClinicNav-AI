@@ -11,7 +11,7 @@ function hasUsableKey(key: string | undefined) {
 
 function clinicNavPrompt(input: NavigateRequest) {
   return `
-You are ClinicNav AI, a healthcare navigation assistant for Germany.
+You are CareNav AI, a healthcare navigation assistant for Germany.
 
 Safety rules:
 - Do not diagnose diseases or claim certainty.
@@ -119,7 +119,7 @@ function latestUserMessage(messages: ChatMessage[]) {
 
 function chatPrompt(situation: NavigateRequest, report: NavigationResult, messages: ChatMessage[]) {
   return `
-You are ClinicNav AI's follow-up chat assistant.
+You are CareNav AI's follow-up chat assistant.
 
 The user already received a healthcare navigation report. Your job is to help them understand the report, prepare for the recommended care route, clarify German healthcare terms, refine what to say, and identify whether a new warning sign means urgent escalation.
 
@@ -161,7 +161,7 @@ function fallbackChatReply(situation: NavigateRequest, report: NavigationResult,
   if (risk.riskLevel === "emergency") {
     return {
       reply:
-        "Your new message includes possible emergency warning signs. If symptoms are severe, worsening, or life-threatening, call 112 immediately or go to the nearest Notaufnahme. ClinicNav AI cannot assess emergencies through chat.",
+        "Your new message includes possible emergency warning signs. If symptoms are severe, worsening, or life-threatening, call 112 immediately or go to the nearest Notaufnahme. CareNav AI cannot assess emergencies through chat.",
       source: "rules",
       urgent: true,
     };

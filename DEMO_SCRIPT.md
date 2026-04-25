@@ -1,8 +1,8 @@
-# ClinicNav AI Demo Script
+# CareNav AI Demo Script
 
 ## 30-Second Pitch
 
-ClinicNav AI is Google Maps for healthcare systems. It helps newcomers in Germany decide whether to contact a Hausarzt, Apotheke, dentist, 116117, 112, or an insurance office. It does not diagnose. It safely routes, explains local terms, creates a German phrase, and prepares a doctor-ready summary.
+CareNav AI is Google Maps for healthcare systems. It helps newcomers in Germany decide whether to contact a Hausarzt, Apotheke, dentist, 116117, 112, or an insurance office. It does not diagnose. It safely routes, explains local terms, creates a German phrase, and prepares a doctor-ready summary.
 
 ## 2-Minute Demo
 
@@ -12,8 +12,8 @@ ClinicNav AI is Google Maps for healthcare systems. It helps newcomers in German
 4. Show "What to say in German" and copy the phrase.
 5. Show the document checklist and doctor-ready summary.
 6. Click "PDF" to show export readiness.
-7. Close with: "ClinicNav AI turns healthcare confusion into a safe next step."
+7. Close with: "CareNav AI turns healthcare confusion into a safe next step."
 
 ## Safety Line
 
-ClinicNav AI is not a diagnosis tool and not medical advice. If symptoms are severe, worsening, or life-threatening, it tells users to call emergency services immediately.
+CareNav AI is not a diagnosis tool and not medical advice. If symptoms are severe, worsening, or life-threatening, it tells users to call emergency services immediately.

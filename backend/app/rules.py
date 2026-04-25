@@ -3,7 +3,7 @@ import re
 from app.schemas import NavigateRequest, NavigationResult, RiskLevel
 
 DISCLAIMER = (
-    "ClinicNav AI does not provide diagnosis or medical advice. It helps you navigate care options. "
+    "CareNav AI does not provide diagnosis or medical advice. It helps you navigate care options. "
     "If symptoms are severe, worsening, or life-threatening, call emergency services immediately."
 )
 

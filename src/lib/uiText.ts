@@ -187,7 +187,7 @@ export const uiText: Record<LanguageCode, { home: HomeText; chat: ChatText; hero
     },
     checkIn: {
       kicker: "Navigation check-in",
-      title: "Tell ClinicNav what is happening.",
+      title: "Tell CareNav what is happening.",
       subtitle: "The app routes first, explains second. Emergency warning signs override AI output and send the user toward 112 or urgent help.",
       exampleLabel: "Example scenario:",
       exampleBody: "prefill a realistic case to see the full care route, summary, phrase, and follow-up support.",

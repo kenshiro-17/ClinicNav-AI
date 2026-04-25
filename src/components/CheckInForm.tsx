@@ -65,7 +65,7 @@ export function CheckInForm({
         <div>
           <p className="premium-kicker text-sm font-semibold">{german ? "Navigation" : "Navigation check-in"}</p>
           <h2 className="font-display mt-3 text-3xl font-semibold text-[#332a22]">
-            {german ? "Beschreiben Sie kurz, was passiert ist." : "Tell ClinicNav what is happening."}
+            {german ? "Beschreiben Sie kurz, was passiert ist." : "Tell CareNav what is happening."}
           </h2>
           <p className="mt-4 text-base leading-7 text-slate-600">
             {german

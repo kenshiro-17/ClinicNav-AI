@@ -43,7 +43,7 @@ async def generate_with_gemini(payload: NavigateRequest) -> NavigationResult:
         return fallback_result(payload, "mock")
 
     prompt = f"""
-You are ClinicNav AI, a healthcare navigation assistant for Germany.
+You are CareNav AI, a healthcare navigation assistant for Germany.
 
 Safety rules:
 - Do not diagnose diseases or claim certainty.
@@ -109,7 +109,7 @@ def fallback_chat_reply(payload: NavigateRequest, report: NavigationResult, mess
         return ChatResponse(
             reply=(
                 "Your new message includes possible emergency warning signs. If symptoms are severe, worsening, "
-                "or life-threatening, call 112 immediately or go to the nearest Notaufnahme. ClinicNav AI cannot "
+                "or life-threatening, call 112 immediately or go to the nearest Notaufnahme. CareNav AI cannot "
                 "assess emergencies through chat."
             ),
             source="rules",
@@ -137,7 +137,7 @@ async def chat_with_gemini(payload: NavigateRequest, report: NavigationResult, m
         return fallback_chat_reply(payload, report, messages, "mock")
 
     prompt = f"""
-You are ClinicNav AI's follow-up chat assistant.
+You are CareNav AI's follow-up chat assistant.
 
 The user already received a healthcare navigation report. Help them understand the report, prepare what to say, clarify German healthcare terms, refine next steps, and identify warning signs.
 

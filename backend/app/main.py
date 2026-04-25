@@ -6,7 +6,7 @@ from app.gemini import chat_with_gemini, generate_with_gemini
 from app.rules import detect_risk, fallback_result
 from app.schemas import ChatRequest, ChatResponse, NavigateRequest, NavigationResult
 
-app = FastAPI(title="ClinicNav AI API", version="0.1.0")
+app = FastAPI(title="CareNav AI API", version="0.1.0")
 
 origins = [origin.strip() for origin in settings.allowed_origins.split(",") if origin.strip()]
 app.add_middleware(

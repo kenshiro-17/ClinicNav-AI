@@ -258,7 +258,7 @@ export function ChatPanel({ situation, report, german = false }: { situation: Na
                   >
                     <div className="mb-1 flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.12em] opacity-75">
                       {message.role === "assistant" ? <Bot className="h-3.5 w-3.5" /> : <UserRound className="h-3.5 w-3.5" />}
-                      {message.role === "assistant" ? "ClinicNav" : "You"}
+                      {message.role === "assistant" ? "CareNav" : "You"}
                     </div>
                     {message.content}
                   </div>

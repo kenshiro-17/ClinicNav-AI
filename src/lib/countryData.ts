@@ -1,7 +1,7 @@
 import type { LocalTerm } from "@/types";
 
 export const safetyDisclaimer =
-  "ClinicNav AI does not provide diagnosis or medical advice. It helps you navigate care options. If symptoms are severe, worsening, or life-threatening, call emergency services immediately.";
+  "CareNav AI does not provide diagnosis or medical advice. It helps you navigate care options. If symptoms are severe, worsening, or life-threatening, call emergency services immediately.";
 
 export const germanyGlossary: LocalTerm[] = [
   { term: "Hausarzt", meaning: "General practitioner or family doctor, often the first routine contact." },

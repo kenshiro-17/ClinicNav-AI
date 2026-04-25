@@ -57,12 +57,12 @@ export function HomeClient() {
 
   function setLanguageAndPersist(nextLanguage: "en" | "de", source: "manual" | "user_type") {
     setLanguage(nextLanguage);
-    window.localStorage.setItem("clinicnav-language", nextLanguage);
+    window.localStorage.setItem("carenav-language", nextLanguage);
     trackEvent("language_changed", { language: nextLanguage, source });
   }
 
   useEffect(() => {
-    const persisted = window.localStorage.getItem("clinicnav-language");
+    const persisted = window.localStorage.getItem("carenav-language");
     if (persisted === "en" || persisted === "de") {
       setLanguage(persisted);
     }
@@ -143,7 +143,7 @@ export function HomeClient() {
             <div className="pastel-icon flex h-8 w-8 items-center justify-center rounded-full shadow-sm">
               <HeartPulse className="h-4 w-4" />
             </div>
-            <span className="font-ui whitespace-nowrap leading-none font-semibold tracking-tight text-[#332a22]">ClinicNav AI</span>
+            <span className="font-ui whitespace-nowrap leading-none font-semibold tracking-tight text-[#332a22]">CareNav AI</span>
           </div>
           <nav className="font-ui hidden items-center justify-center gap-1 text-sm font-medium text-[#4f4338] lg:flex">
             {navLinks.map(([id, label]) => (
@@ -312,13 +312,13 @@ export function HomeClient() {
           <div className="grid gap-4 md:grid-cols-3">
           {(german
             ? [
-                ["Lokale Begriffe, klare Wege", "ClinicNav AI ordnet Hausarzt, Apotheke, Facharzt, 116117 und 112 verständlich ein."],
+                ["Lokale Begriffe, klare Wege", "CareNav AI ordnet Hausarzt, Apotheke, Facharzt, 116117 und 112 verständlich ein."],
                 ["Orientierung, keine Diagnose", "Die Empfehlung hilft bei der Wahl des Versorgungswegs und ersetzt keine ärztliche Einschätzung."],
                 ["Gut vorbereitet", "Sie erhalten Zusammenfassung, Unterlagenliste und konkrete nächste Schritte."],
               ]
             : [
                 ["New country, new rules", "People often do not know if they need a Hausarzt, Apotheke, Facharzt, 116117, or 112."],
-                ["Navigation, not diagnosis", "ClinicNav AI explains the care route and preparation steps without pretending to be a doctor."],
+                ["Navigation, not diagnosis", "CareNav AI explains the care route and preparation steps without pretending to be a doctor."],
                 ["Doctor-ready output", "The user leaves with documents, local terms, a German phrase, and a copyable summary."],
               ]).map(([title, body], index) => (
             <article
@@ -393,8 +393,8 @@ export function HomeClient() {
             </h2>
             <p className="mt-3 max-w-2xl text-sm leading-6 text-slate-600">
               {german
-                ? "ClinicNav AI ist darauf ausgelegt, von Deutschland aus in mehrsprachige, länderspezifische Navigation mit geprüften lokalen Daten zu wachsen."
-                : "ClinicNav AI is designed to expand from Germany-first routing into multilingual, multi-country care navigation with verified local service directories and institution-grade safety controls."}
+                ? "CareNav AI ist darauf ausgelegt, von Deutschland aus in mehrsprachige, länderspezifische Navigation mit geprüften lokalen Daten zu wachsen."
+                : "CareNav AI is designed to expand from Germany-first routing into multilingual, multi-country care navigation with verified local service directories and institution-grade safety controls."}
             </p>
           </div>
           <div className="grid gap-3 sm:grid-cols-2">

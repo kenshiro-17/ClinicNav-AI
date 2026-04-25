@@ -155,7 +155,7 @@ export function buildNavigationResult(input: NavigateRequest, source: Navigation
           ? "Call 112 immediately if symptoms are life-threatening. Do not wait for an appointment."
           : "Save the summary, bring your documents, and contact the recommended care route. Use 116117 if it is urgent but not life-threatening.",
     disclaimer: german
-      ? "ClinicNav AI stellt keine Diagnose und ersetzt keine medizinische Beratung. Bei schweren, sich verschlechternden oder lebensbedrohlichen Symptomen sofort den Notruf wählen."
+      ? "CareNav AI stellt keine Diagnose und ersetzt keine medizinische Beratung. Bei schweren, sich verschlechternden oder lebensbedrohlichen Symptomen sofort den Notruf wählen."
       : safetyDisclaimer,
     source,
   };

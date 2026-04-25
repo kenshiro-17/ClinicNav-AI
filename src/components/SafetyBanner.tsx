@@ -16,7 +16,7 @@ export function SafetyBanner({ emergency = false, german = false }: { emergency?
           {emergency ? <AlertTriangle className="mt-0.5 h-5 w-5 shrink-0" /> : <ShieldCheck className="mt-0.5 h-5 w-5 shrink-0" />}
           <p className="text-sm leading-6">
             {german
-              ? "ClinicNav AI stellt keine Diagnose und ersetzt keine medizinische Beratung. Es hilft bei der Orientierung im Versorgungssystem. Bei schweren, sich verschlechternden oder lebensbedrohlichen Symptomen sofort den Notruf wählen."
+              ? "CareNav AI stellt keine Diagnose und ersetzt keine medizinische Beratung. Es hilft bei der Orientierung im Versorgungssystem. Bei schweren, sich verschlechternden oder lebensbedrohlichen Symptomen sofort den Notruf wählen."
               : safetyDisclaimer}
           </p>
         </div>

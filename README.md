@@ -1,6 +1,6 @@
-# ClinicNav AI
+# CareNav AI
 
-ClinicNav AI helps international students, migrants, tourists, and newcomers understand where to go, what to bring, and what to say when navigating an unfamiliar healthcare system.
+CareNav AI helps international students, migrants, tourists, and newcomers understand where to go, what to bring, and what to say when navigating an unfamiliar healthcare system.
 
 ## Problem Statement
 
@@ -8,7 +8,7 @@ Newcomers in Germany often do not know whether to go to an Apotheke, Hausarzt, F
 
 ## Solution
 
-ClinicNav AI is a safe healthcare navigation assistant. It does not diagnose. It routes users to the right type of care, explains local healthcare terms, creates a doctor-ready summary, suggests documents to bring, and generates simple German phrases.
+CareNav AI is a safe healthcare navigation assistant. It does not diagnose. It routes users to the right type of care, explains local healthcare terms, creates a doctor-ready summary, suggests documents to bring, and generates simple German phrases.
 
 ## Target Users
 
@@ -41,7 +41,7 @@ ClinicNav AI is a safe healthcare navigation assistant. It does not diagnose. It
 
 ## Safety Approach
 
-ClinicNav AI does not provide diagnosis or medical advice. It helps users navigate care options. Severe or life-threatening red flags force emergency guidance before any AI generation. For Germany, the app uses local static data that states 112 is for life-threatening emergencies and 116117 is the medical on-call service for urgent non-life-threatening care.
+CareNav AI does not provide diagnosis or medical advice. It helps users navigate care options. Severe or life-threatening red flags force emergency guidance before any AI generation. For Germany, the app uses local static data that states 112 is for life-threatening emergencies and 116117 is the medical on-call service for urgent non-life-threatening care.
 
 ## Run Locally
 
@@ -77,7 +77,7 @@ Create `.env.local` from `.env.example`:
 NEXT_PUBLIC_APP_URL=http://localhost:3000
 FASTAPI_URL=http://localhost:8000
 GEMINI_API_KEY=
-DATABASE_URL=postgresql://postgres:postgres@localhost:5432/clinicnav_ai
+DATABASE_URL=postgresql://postgres:postgres@localhost:5432/carenav_ai
 ```
 
 The app still works without `GEMINI_API_KEY` by using deterministic rules and mock responses.
@@ -115,13 +115,13 @@ Expected result:
 ## Judging Criteria Mapping
 
 ### Problem & Solution
-ClinicNav AI solves the confusion newcomers face when navigating unfamiliar healthcare systems.
+CareNav AI solves the confusion newcomers face when navigating unfamiliar healthcare systems.
 
 ### Technical Execution
 The app uses structured input, deterministic safety routing, optional AI-generated guidance, and clean reusable components.
 
 ### Innovation & Creativity
-Unlike symptom checkers, ClinicNav AI does not diagnose. It acts as “Google Maps for healthcare systems.”
+Unlike symptom checkers, CareNav AI does not diagnose. It acts as “Google Maps for healthcare systems.”
 
 ### Impact & Potential
 The app can support international students, migrants, tourists, and people with language barriers.

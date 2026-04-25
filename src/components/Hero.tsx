@@ -45,7 +45,7 @@ export function Hero({ onSample, german = false }: { onSample: () => void; germa
         <div className="premium-dark animate-rise rounded-2xl p-5 [animation-delay:120ms]">
           <div className="mb-5 flex items-center justify-between border-b border-white/50 pb-4">
             <div>
-              <p className="text-sm font-medium text-[#8f5f45]">ClinicNav AI</p>
+              <p className="text-sm font-medium text-[#8f5f45]">CareNav AI</p>
               <h2 className="font-display break-safe text-2xl font-semibold">{t.panelTitle}</h2>
             </div>
             <div className="pastel-icon flex h-12 w-12 items-center justify-center rounded-full">
