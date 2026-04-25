@@ -1,0 +1,20 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model NavigationSession {
+  id               String   @id @default(cuid())
+  country          String
+  userType         String
+  concern          String
+  severity         Int
+  duration         String
+  recommendedRoute String
+  riskLevel        String
+  createdAt        DateTime @default(now())
+}
